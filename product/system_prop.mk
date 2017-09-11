@@ -10,7 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Volume
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_steps=15 \
-	ro.config.media_vol_steps=30
+	ro.config.media_vol_steps=20
 
 # Chipname
 PRODUCT_PROPERTY_OVERRIDES += \
