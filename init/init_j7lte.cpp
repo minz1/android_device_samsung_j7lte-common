@@ -28,7 +28,6 @@
  */
 
 #include <init_msm8916.h>
-#include <android-base/properties.h>
 
 void init_target_properties(void)
 {
