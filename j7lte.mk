@@ -14,11 +14,14 @@
 # limitations under the License.
 #
 
-# Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/j7lte-common/j7lte-common-vendor.mk)
+# Languages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
+
+# Inherit from vendor
+$(call inherit-product-if-exists, vendor/samsung/j7lte-common/j7lte-common-vendor.mk)
 
 LOCAL_PATH := device/samsung/j7lte-common
 
@@ -27,11 +30,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 	$(LOCAL_PATH)/overlay \
 	$(LOCAL_PATH)/overlay-lineage
 
-# Dalvik/ART
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
-# Languages
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
+
+# Dalvik/ART
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
