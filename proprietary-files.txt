@@ -39,7 +39,7 @@ lib/libtinyalsa.so|f6289d56c9f016939c96bff666c8ceb9
 # Camera
 etc/B05QL_s5k5e3yx_module_info.xml
 etc/T13QL_s5k3l2xx_module_info.xml
-lib/hw/camera.msm8916.so
+lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
 lib/libaec_algo_front.so
 lib/libaec_algo_rear.so
 lib/libaf_algo_rear.so
@@ -66,6 +66,7 @@ lib/libchromatix_s5k3l2xx_preview.so
 lib/libchromatix_s5k3l2xx_snapshot.so
 lib/libchromatix_s5k3l2xx_uhd_video.so
 lib/libchromatix_s5k3l2xx_zslshot.so
+lib/libface.so
 lib/libmmcamera2_stats_algorithm.so
 lib/libmmcamera_cac2_lib_13M.so
 lib/libmmcamera_wavelet_lib.so
@@ -110,6 +111,7 @@ vendor/lib/libmmipl.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
+vendor/lib/libqc-opt.so
 vendor/lib/libqomx_jpegenc.so
 
 # IRQ Balancer
